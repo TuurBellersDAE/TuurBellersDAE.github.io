@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — Tuur Bellers</title>
+  <link rel="stylesheet" href="styles.css"/><script defer src="script.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container navrow">
+    <a class="brand" href="index.html">Tuur Bellers</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="resume.html">Résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero"><h1>My Projects</h1></section>
+
+  <h2>Completed</h2>
+  <div class="grid cards">
+    <article class="card">
+      <a class="media" href="projects/utility-ai.html" data-anim="assets/utility-anim.gif">
+        <img src="assets/utility-thumb.jpg" alt="Utility AI screenshot">
+      </a>
+      <div class="card">
+        <h3>Utility AI — Autonomous Agent (C++)</h3>
+        <p>Hybrid FSM + Utility AI for a zombie survival game. Context-based decisions for exploration, items, fleeing, and combat.</p>
+        <div class="tags"><span>C++</span><span>AI</span><span>Systems</span></div>
+        <div class="actions">
+          <a class="btn" href="projects/utility-ai.html">See more</a>
+          <a class="btn ghost" target="_blank" href="https://github.com/TuurBellersDAE/UtilityAI_Agent">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <a class="media" href="projects/shrimpact.html">
+        <img src="assets/shrimpact-thumb.jpg" alt="Shrimpact screenshot">
+      </a>
+      <div class="card">
+        <h3>Shrimpact (Unity)</h3>
+        <p>Team arena brawler. I built reactive environmental mechanics and a lightweight fish-school AI.</p>
+        <div class="tags"><span>Unity</span><span>Gameplay</span><span>Team</span></div>
+        <div class="actions">
+          <a class="btn" href="projects/shrimpact.html">See more</a>
+          <a class="btn ghost" target="_blank" href="https://github.com/TuurBellersDAE/Shrimpact">Code</a>
+          <a class="btn ghost" target="_blank" href="https://jelleadyns.itch.io/shrimpact">Play</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <h2 class="subtle">Ongoing</h2>
+  <div class="grid cards">
+    <article class="card">
+      <a class="media" href="#">
+        <div style="display:grid;place-items:center;height:100%;color:var(--muted);font-weight:800;border-radius:12px;border:1px solid var(--ring)">UE5 • LLM • BT</div>
+      </a>
+      <div class="card">
+        <h3>LLM-Guided Behavior Tree Evolution — UE5 (C++)</h3>
+        <p>Using an LLM to generate & evolve BTs at runtime. Prototype Seeker NPC exports successful branches as reusable assets.</p>
+        <div class="tags"><span>Unreal</span><span>C++</span><span>AI</span></div>
+        <div class="actions">
+          <a class="btn ghost" target="_blank" href="https://github.com/TuurBellersDAE/LLM_BT_Evolution">Code</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="foot"><div class="container"><small>&copy; <span id="y"></span> Tuur Bellers</small></div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>

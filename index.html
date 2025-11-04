@@ -1,132 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tuur Bellers — Game Developer</title>
-  <meta name="description" content="Gameplay & AI programming portfolio — projects in C++, Unity, Unreal." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Home — Tuur Bellers</title>
+  <link rel="stylesheet" href="styles.css"/>
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Sticky top bar -->
   <header class="topbar">
-    <div class="container nav-row">
-      <a class="brand" href="#top">Tuur Bellers</a>
+    <div class="container navrow">
+      <a class="brand" href="index.html">Tuur Bellers</a>
       <nav class="nav">
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Résumé</a>
       </nav>
     </div>
   </header>
 
-  <main id="top" class="container">
-    <!-- Hero -->
+  <main class="container">
     <section class="hero">
-      <h1>Gameplay & <span class="grad">AI</span> Programming</h1>
-      <p class="lede">
-        I’m a game developer at Howest DAE. I build responsive gameplay systems and
-        intelligent behavior that makes worlds feel alive.
-      </p>
-      <div class="quick">
-        <span>C++</span><span>C#</span><span>Unity</span><span>Unreal</span><span>FSM</span><span>Utility AI</span><span>BT</span>
-      </div>
+      <h1>Hi, I’m <span class="grad">Tuur</span>.</h1>
+      <p class="lede">Gameplay & <strong>AI programming</strong> student at Howest DAE. I like turning ideas into responsive mechanics and building systems that make worlds feel alive.</p>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
+    <section>
+      <h2>What I do</h2>
       <div class="grid skills">
-        <article class="chip"><h3>Languages</h3><p>C++, C#</p></article>
-        <article class="chip"><h3>Engines</h3><p>Unity, Unreal Engine 5</p></article>
-        <article class="chip"><h3>AI</h3><p>FSM, Utility AI, Behavior Trees</p></article>
-        <article class="chip"><h3>Gameplay</h3><p>Mechanics, feel, iteration, balancing</p></article>
-        <article class="chip"><h3>Tools</h3><p>Git, Visual Studio, Rider, Blender, Photoshop</p></article>
-        <article class="chip"><h3>Team</h3><p>Agile, code reviews, feature ownership</p></article>
+        <article class="card"><h3>Languages</h3><p>C++, C#</p></article>
+        <article class="card"><h3>Engines</h3><p>Unity, Unreal Engine 5</p></article>
+        <article class="card"><h3>AI</h3><p>FSM, Utility AI, Behavior Trees</p></article>
+        <article class="card"><h3>Gameplay</h3><p>Mechanics, feel, iteration, balancing</p></article>
+        <article class="card"><h3>Tools</h3><p>Git, VS, Rider, Blender, Photoshop</p></article>
+        <article class="card"><h3>Team</h3><p>Agile, code reviews, feature ownership</p></article>
       </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>My Projects</h2>
-
-      <h3 class="subtle">Completed Projects</h3>
-      <div class="grid cards">
-
-        <!-- Card 1 -->
-        <article class="card" data-observe>
-          <a class="media" href="projects/utility-ai.html"
-             data-thumbnail="assets/utility-thumb.jpg"
-             data-anim="assets/utility-anim.gif"
-             aria-label="Utility AI — project page">
-            <img src="assets/utility-thumb.jpg" alt="Utility AI screenshot" loading="lazy">
-          </a>
-          <div class="card-body">
-            <h4>Utility AI — Autonomous Agent (C++)</h4>
-            <p>Hybrid FSM + Utility AI for a zombie survival game. Context-based decisions for exploration, item use, fleeing, and combat.</p>
-            <div class="tags"><span>C++</span><span>AI</span><span>Systems</span></div>
-            <div class="actions">
-              <a class="btn" href="projects/utility-ai.html">See more</a>
-              <a class="btn ghost" target="_blank" href="https://github.com/TuurBellersDAE/UtilityAI_Agent">Code</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="card" data-observe>
-          <a class="media" href="projects/shrimpact.html"
-             data-thumbnail="assets/shrimpact-thumb.jpg"
-             aria-label="Shrimpact — project page">
-            <img src="assets/shrimpact-thumb.jpg" alt="Shrimpact gameplay" loading="lazy">
-          </a>
-          <div class="card-body">
-            <h4>Shrimpact (Unity)</h4>
-            <p>Team arena brawler. I built reactive environmental mechanics and a lightweight background fish-school AI.</p>
-            <div class="tags"><span>Unity</span><span>Gameplay</span><span>Team</span></div>
-            <div class="actions">
-              <a class="btn" href="projects/shrimpact.html">See more</a>
-              <a class="btn ghost" target="_blank" href="https://github.com/TuurBellersDAE/Shrimpact">Code</a>
-              <a class="btn ghost" target="_blank" href="https://jelleadyns.itch.io/shrimpact">Play</a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <h3 class="subtle">Ongoing Projects</h3>
-      <div class="grid cards">
-        <article class="card" data-observe>
-          <a class="media" href="#" aria-label="LLM-Guided Behavior Tree project page">
-            <div class="placeholder">UE5 • LLM • BT</div>
-          </a>
-          <div class="card-body">
-            <h4>LLM-Guided Behavior Tree Evolution — UE5 (C++)</h4>
-            <p>Using an LLM to generate and evolve BTs at runtime. Prototype Seeker NPC exports successful branches as reusable assets.</p>
-            <div class="tags"><span>Unreal</span><span>C++</span><span>AI</span></div>
-            <div class="actions">
-              <a class="btn ghost" target="_blank" href="https://github.com/TuurBellersDAE/LLM_BT_Evolution">Code</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <ul class="links">
-        <li><a href="mailto:tuur.bellers@gmail.com">tuur.bellers@gmail.com</a></li>
-        <li><a target="_blank" href="https://github.com/TuurBellersDAE">GitHub</a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/tuur-bellers">LinkedIn</a></li>
-      </ul>
     </section>
   </main>
 
   <footer class="foot">
-    <div class="container">
-      <small>&copy; <span id="y"></span> Tuur Bellers</small>
-    </div>
+    <div class="container"><small>&copy; <span id="y"></span> Tuur Bellers</small></div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
