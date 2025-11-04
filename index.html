@@ -2,12 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tuur Bellers — Game Developer</title>
-  <meta name="description" content="Gameplay & AI programming student at Howest DAE."/>
+  <meta name="description" content="Gameplay & AI programming student at Howest DAE. Projects in C++, Unity, Unreal." />
+  <meta name="color-scheme" content="dark light" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --bg:#0b0c10; --panel:#111317; --ring:#1f2937;
+      --fg:#e5e7eb; --muted:#9aa3af; --accent:#7dd3fc; --accent2:#a78bfa;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Inter",system-ui,-apple-system,Segoe UI,Roboto}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:960px;margin:0 auto;padding:28px}
+    .nav{display:flex;gap:18px;justify-content:flex-end;margin-bottom:28px}
+    .nav a{color:var(--muted);font-weight:600}
+    .nav a:hover{color:var(--fg)}
+    h1{font-size:42px;margin:8px 0 6px;line-height:1.1}
+    h2{font-size:22px;margin:36px 0 14px}
+    h3{margin:0 0 6px}
+    .lead{font-weight:600;margin:0 0 6px}
+    .muted{color:var(--muted);margin:0 0 16px}
+    .accent{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--ring);background:var(--panel);color:var(--fg);font-weight:600}
+    .btn:hover{border-color:var(--accent);color:var(--accent)}
+    #projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .card{background:var(--panel);border:1px solid var(--ring);border-radius:14px;padding:18px;display:flex;flex-direction:column;justify-content:space-between}
+    .card p{margin:8px 0 12px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+    .tag{font-size:12px;padding:3px 8px;border:1px solid var(--ring);border-radius:999px;color:var(--muted)}
+    .links{list-style:none;padding:0;margin:0;display:flex;gap:16px;flex-wrap:wrap}
+    footer{text-align:center;color:var(--muted);margin-top:32px}
+    @media (max-width:520px){h1{font-size:32px}}
+  </style>
 </head>
 <body>
   <header class="wrap">
@@ -16,17 +46,13 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-
     <h1>Hi, I’m <span class="accent">Tuur Bellers</span></h1>
     <p class="lead">Gameplay & AI programming · Howest Digital Arts & Entertainment</p>
     <p class="muted">C++, C# · Unity · Unreal Engine</p>
-
     <div class="cta">
-      <!-- replace CV.pdf with your actual file name if you add it -->
       <a class="btn" href="CV.pdf" target="_blank">Download CV</a>
-      <!-- replace with your profiles -->
-      <a class="btn ghost" href="https://github.com/tuurbellers" target="_blank">GitHub</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/tuur-bellers" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/TuurBellersDAE" target="_blank">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/tuur-bellers" target="_blank">LinkedIn</a>
     </div>
   </header>
 
@@ -36,49 +62,69 @@
 
       <!-- Project 1 -->
       <article class="card">
-        <h3>Utility AI – Autonomous Agent (C++)</h3>
-        <p class="summary">Project focused on developing a hybrid FSM and Utility AI system for autonomous agent decision-making in a zombie survival game.</p>
-        <p>Created real-time behaviors for exploration, item use, and combat with contextual scoring and clear state transitions.</p>
-        <div class="tags"><span>C++</span><span>AI</span><span>Systems</span></div>
-        <!-- add your repo link if public -->
-        <a class="btn tiny" href="#" target="_blank">Code</a>
+        <div>
+          <h3>Utility AI — Autonomous Agent (C++)</h3>
+          <p>Hybrid FSM + Utility AI system for autonomous decision-making in a zombie survival game. 
+             Real-time behaviors for exploration, item collection, and combat using contextual scoring and state transitions.</p>
+          <div class="tags">
+            <span class="tag">C++</span><span class="tag">AI</span><span class="tag">Systems</span>
+          </div>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://github.com/TuurBellersDAE/UtilityAI_Agent" target="_blank">View Code</a>
+        </div>
       </article>
 
       <!-- Project 2 -->
       <article class="card">
-        <h3>Shrimpact (Unity)</h3>
-        <p class="summary">Team game project — one of three programmers collaborating with art & tech art.</p>
-        <p>Built environmental mechanics and a lightweight background fish-school AI to enhance atmosphere and match flow.</p>
-        <div class="tags"><span>Unity</span><span>Gameplay</span><span>Team</span></div>
-        <a class="btn tiny" href="https://jelleadyns.itch.io/shrimpact" target="_blank">Itch.io</a>
+        <div>
+          <h3>Shrimpact (Unity)</h3>
+          <p>Team game project built in Unity. Developed environmental mechanics and a background fish-school AI in collaboration with artists and designers.</p>
+          <div class="tags">
+            <span class="tag">Unity</span><span class="tag">Gameplay</span><span class="tag">Team</span>
+          </div>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://github.com/TuurBellersDAE/Shrimpact" target="_blank">View Code</a>
+          <a class="btn" href="https://jelleadyns.itch.io/shrimpact" target="_blank">Play</a>
+        </div>
       </article>
 
-      <!-- Add more project cards as needed -->
+      <!-- Project 3 -->
+      <article class="card">
+        <div>
+          <h3>LLM-Guided Behavior Tree Evolution — Unreal Engine 5 (C++)</h3>
+          <p>Research project using a Large Language Model to generate and evolve Behavior Trees at runtime. Built a Seeker NPC prototype with self-adapting behaviors.</p>
+          <div class="tags">
+            <span class="tag">Unreal</span><span class="tag">C++</span><span class="tag">AI</span>
+          </div>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://github.com/TuurBellersDAE/LLM_BT_Evolution" target="_blank">View Code</a>
+        </div>
+      </article>
     </section>
 
     <section id="about">
       <h2>About</h2>
-      <p>
-        I’m a game developer who enjoys building responsive gameplay systems and the AI that makes worlds feel alive.
-        Currently doing graduation work on AI for games at Howest DAE. Comfortable working in teams and iterating quickly.
-      </p>
+      <p>I’m a game developer focused on gameplay and AI programming, currently completing my graduation work on AI for games at Howest DAE. 
+         I enjoy building responsive gameplay systems, exploring creative AI techniques, and turning ideas into playable mechanics.</p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <ul class="links">
         <li><a href="mailto:tuur.bellers@gmail.com">tuur.bellers@gmail.com</a></li>
-        <li><a href="https://github.com/tuurbellers" target="_blank">GitHub</a></li>
+        <li><a href="https://github.com/TuurBellersDAE" target="_blank">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/tuur-bellers" target="_blank">LinkedIn</a></li>
-        <!-- add Itch if you want -->
-        <!-- <li><a href="https://tuurbellers.itch.io" target="_blank">Itch.io</a></li> -->
       </ul>
     </section>
   </main>
 
-  <footer class="wrap foot">
-    <small>&copy; <span id="y"></span> Tuur Bellers · theme: minimal</small>
+  <footer class="wrap">
+    <small>&copy; <span id="year"></span> Tuur Bellers · Built for GitHub Pages</small>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
