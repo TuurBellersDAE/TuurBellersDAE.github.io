@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Utility AI — Project | Tuur Bellers</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a class="brand" href="../index.html#projects">← Back to Projects</a>
+      <nav class="nav">
+        <a target="_blank" href="https://github.com/TuurBellersDAE/UtilityAI_Agent">Code</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container project">
+    <!-- Hero media -->
+    <section class="project-hero">
+      <div class="hero-media">
+        <!-- swap img for <video> or <iframe> if you prefer -->
+        <img src="../assets/utility-thumb.jpg" alt="Utility AI screenshot">
+      </div>
+      <div class="hero-text">
+        <h1>Utility AI — Autonomous Agent (C++)</h1>
+        <p class="lede">Hybrid FSM + Utility AI system for a zombie survival game.
+           The agent evaluates context every frame to explore, collect items, flee, or engage enemies.</p>
+        <div class="tags"><span>C++</span><span>AI</span><span>Systems</span><span>Solo</span></div>
+        <p class="meta">2025</p>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section>
+      <h2>Demo</h2>
+      <div class="card video">
+        <div class="fluid">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Utility AI Demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goal -->
+    <section>
+      <h2>Goal</h2>
+      <div class="card">
+        <p>
+          Build an agent that survives autonomously using a robust decision system.
+          I combined a high-level <strong>FSM</strong> (Explore / Attack / Flee) with a per-state <strong>Utility AI</strong>
+          which scores actions and executes the best one each frame.
+        </p>
+      </div>
+    </section>
+
+    <!-- My role -->
+    <section class="two-col">
+      <div>
+        <h2>My Role</h2>
+        <div class="card">
+          <ul>
+            <li>Designed the Utility AI framework (scoring & selection loop)</li>
+            <li>Integrated FSM states and per-state action sets</li>
+            <li>Implemented item handling, survival priorities, and steering</li>
+            <li>Built lightweight debug UI & tunable parameters</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Tech Stack</h2>
+        <div class="card">
+          <ul>
+            <li>C++ (custom framework), Visual Studio</li>
+            <li>FSM, Utility AI, Steering (seek/flee)</li>
+            <li>Git for version control</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <h2>Highlights</h2>
+      <div class="card">
+        <ul>
+          <li>Context-aware action scoring (health, ammo, distance, threats)</li>
+          <li>Exploration vs. item seeking vs. combat prioritization</li>
+          <li>Partial observability + memory (simple blackboard)</li>
+          <li>Extensible actions (plug-and-play interface)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section>
+      <div class="actions">
+        <a class="btn" target="_blank" href="https://github.com/TuurBellersDAE/UtilityAI_Agent">View Code</a>
+        <a class="btn ghost" href="../index.html#projects">Back</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container"><small>&copy; <span id="y"></span> Tuur Bellers</small></div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
