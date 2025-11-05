@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>LLM-Guided Behavior Tree Evolution — Tuur Bellers</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script defer src="../script.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container navrow">
+    <a class="brand" href="../projects.html">← Back to Projects</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="proj-hero">
+    <div>
+      <h1>LLM-Guided Behavior Tree Evolution — UE5 (C++)</h1>
+      <p class="lede">Research project exploring how Large Language Models can generate and evolve Behavior Trees at runtime in Unreal Engine 5.</p>
+      <div class="tags"><span>Unreal</span><span>C++</span><span>AI</span><span>Research</span></div>
+      <p class="meta">2025 - Present</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Research Question</h2>
+    <p>
+      How can a Large Language Model (LLM) be integrated into Unreal Engine 5 to dynamically generate and evolve NPC Behavior Trees at runtime—so that the resulting trees can later function independently as standard BT assets without requiring the LLM?
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Methodology</h2>
+    <p>
+      A prototype <strong>Seeker NPC</strong> is built in Unreal Engine 5 using C++. Its core abilities—movement, observation, object inspection, and memory—are implemented as reusable Behavior Tree tasks and services providing perception data such as tagged objects, lighting, and visibility.
+    </p>
+    <p>
+      During testing, an LLM receives structured sensory data describing what the NPC can see and which actions it can perform. Based on this input, the model generates short BT-like plans composed of predefined actions such as <em>MoveTo</em>, <em>LookAt</em>, or <em>CheckUnder</em>.
+    </p>
+    <p>
+      These plans are interpreted by a custom runtime system inside Unreal that validates and executes each instruction, while logging success rates, timing, and contextual factors. The most successful behaviors are exported as JSON Behavior Trees and then converted into native Unreal BT assets for reuse without any LLM connection.
+    </p>
+  </section>
+
+  <section class="two-col">
+    <div class="card">
+      <h2>Hypotheses</h2>
+      <ul class="tight">
+        <li>LLMs can produce valid, interpretable Behavior Tree structures that run successfully in Unreal Engine.</li>
+        <li>LLM-guided runtime evolution yields more adaptive, context-aware NPC behavior than static designer trees.</li>
+        <li>Generated BTs can be exported as reusable assets functioning independently of the LLM.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Experiment Parameters</h2>
+      <ul class="tight">
+        <li><strong>Independent Variable:</strong> BT generation method (LLM-guided vs manually authored)</li>
+        <li><strong>Dependent Variables:</strong> success rate, adaptability, stability, believability</li>
+        <li><strong>Scenario:</strong> single NPC hide-and-seek test in UE5</li>
+        <li><strong>Duration:</strong> ≈ 2 months</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Expected Outcomes</h2>
+    <ul class="tight">
+      <li>Demonstrate that LLMs can author and evolve Behavior Trees live in UE5.</li>
+      <li>Produce exportable BT assets replicating learned behavior without further LLM input.</li>
+      <li>Establish groundwork for adaptive AI pipelines combining machine reasoning with designer control.</li>
+    </ul>
+  </section>
+
+  <div class="actions">
+    <a class="btn ghost" href="../projects.html">Back</a>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <small>&copy; <span id="y"></span> Tuur Bellers</small>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
